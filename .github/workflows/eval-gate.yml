@@ -5,7 +5,7 @@ concurrency: {group: "eval-gate-${{ github.ref }}", cancel-in-progress: true}
 jobs:
   # The starter repo is an overlay without src/lab8; its CI only runs once copied into a Lab 8 repo.
   detect:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     outputs: {lab8: "${{ steps.has.outputs.lab8 }}"}
     steps:
       - uses: actions/checkout@v7
@@ -16,7 +16,7 @@ jobs:
   eval-gate:
     needs: detect
     if: needs.detect.outputs.lab8
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     timeout-minutes: 15
     env:
       PYTHONUTF8: "1"
@@ -63,7 +63,7 @@ jobs:
   # Core-only submission stays green. Exit 1 = a survived mutant or a false alarm.
   eval-gate-v2:
     needs: eval-gate
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     timeout-minutes: 20
     env: {PYTHONUTF8: "1"}
     defaults: {run: {working-directory: src}}
