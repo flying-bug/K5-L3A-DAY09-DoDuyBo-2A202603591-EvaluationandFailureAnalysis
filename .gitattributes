@@ -1,0 +1,5 @@
+# Eval data is hashed (eval_set_sha): keep identical bytes on every OS, never CRLF.
+*.jsonl text eol=lf
+*.json  text eol=lf
+*.yaml  text eol=lf
+*.yml   text eol=lf

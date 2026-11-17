@@ -26,7 +26,7 @@ Output (rút gọn):
 
 | Trường | Nội dung |
 |---|---|
-| Trial | `seeded_regression C-014@11`, report `E-seeded_regression-20261117-7a3b` (eval set `7a3bc9fba18b`) |
+| Trial | `seeded_regression C-014@11`, report `E-seeded_regression-20261117-1d94` (eval set `1d9419981950`) |
 | Triệu chứng | `refund_amount_correct` FAIL (ledger 90.000đ ≠ nhãn 120.000đ); `reply_amount_matches_ledger` FAIL (reply nói **120.000đ**, ledger ghi **90.000đ**); grader Lab 8 FAIL `proposal_mismatch`. Status `resolved` khớp nhãn nên nhìn reply thì tưởng đúng. |
 | Bước sai đầu tiên | **Event 5 `proposal`** `{"amount_vnd": 120000}`: agent tự lấy quote 150.000đ trừ 30.000đ đã hoàn trước đó. |
 | Vì sao là bước *đầu tiên* | Event 2 đọc đúng đơn O-515 từ DB (`delay_days=5`, `damage_verified=true`). Event 3 `quote` đúng chính sách: 150.000đ, clause `SHIP-LATE-03` + `DMG-04`, khớp `proposal_amount` của nhãn. Event 4 `refund_history` đọc đúng 30.000đ đã hoàn (C-HIST-515). Việc đọc lịch sử chưa sai; cái sai là **dùng** nó để trừ ở event 5, trong khi host `issue_refund` đã tự trừ phần đã hoàn. Kết quả là trừ hai lần: 150.000 − 30.000 − 30.000 = 90.000đ. |
