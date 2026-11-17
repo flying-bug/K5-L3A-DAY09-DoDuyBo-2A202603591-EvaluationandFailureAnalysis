@@ -2,8 +2,8 @@
 
 Card này đi kèm mỗi báo cáo và được dùng lại ở Day 10. Mọi số dưới đây lấy từ report do `python -m lab9.eval` sinh ra, không gõ tay.
 
-- **Run ID / eval set SHA:** baseline `E-swarm-20261117-7a3b` · eval set `7a3bc9fba18b`
-- **Phiên bản:** code nhánh `starter/d09` (commit chứa file này) · eval set v1 (sha `7a3bc9fba18b`) · metric_spec `1.0` (`config/metric_spec.yaml`) · grader `lab9.graders.GRADERS` (cùng commit) · seeds 11/22/33/44/55 · bootstrap 1000 resample, percentile, rng 2027, 95%
+- **Run ID / eval set SHA:** baseline `E-swarm-20261117-1d94` · eval set `1d9419981950`
+- **Phiên bản:** code nhánh `starter/d09` (commit chứa file này) · eval set v1 (sha `1d9419981950`) · metric_spec `1.0` (`config/metric_spec.yaml`) · grader `lab9.graders.GRADERS` (cùng commit) · seeds 11/22/33/44/55 · bootstrap 1000 resample, percentile, rng 2027, 95%
 - **Eval set:** v1, 14 item × 5 seed = 70 trial, nguồn `lab8_public` (`data/public_claims.jsonl`); nhãn ở file riêng `labels_v1.json`, không inline. Mỗi item gắn mã FM theo `docs/failure_taxonomy.md`.
 - **Metric & ngưỡng** (trích `metric_spec.yaml`):
 
@@ -20,7 +20,7 @@ Card này đi kèm mỗi báo cáo và được dùng lại ở Day 10. Mọi s�
 
 - **Kết quả baseline vs PR:**
 
-| Metric | baseline `swarm` (`E-swarm-20261117-7a3b`) | `fixed` (`E-fixed-20261117-7a3b`) | `seeded_regression` (`E-seeded_regression-20261117-7a3b`) |
+| Metric | baseline `swarm` (`E-swarm-20261117-1d94`) | `fixed` (`E-fixed-20261117-1d94`) | `seeded_regression` (`E-seeded_regression-20261117-1d94`) |
 |---|---|---|---|
 | approval_bypass | 0 | 0 | 0 |
 | secret_leak | 0 | 0 | 0 |
@@ -47,7 +47,7 @@ Card này đi kèm mỗi báo cáo và được dùng lại ở Day 10. Mọi s�
   - Grader FM-08 chỉ hiểu số tiền viết dạng "…đ / đồng / VND"; reply viết bằng chữ ("hai mươi nghìn") sẽ lọt.
 ## v2 (M5): eval set v2 + slice gate
 
-- **Run ID / eval set SHA:** baseline `E-swarm-20261117-67e4` · eval set v2 `67e40d5c83f6` · metric_spec `2.0` (`config/metric_spec_v2.yaml`)
+- **Run ID / eval set SHA:** baseline `E-swarm-20261117-da72` · eval set v2 `da7214cd677d` · metric_spec `2.0` (`config/metric_spec_v2.yaml`)
 - **Eval set v2:** 28 item = 14 item v1 + 14 claim của adversarial pack (`split: adversarial`). Mỗi cơ chế tấn công map sang mã FM trong `config/fm_map.yaml`; mọi FM bị tấn công có ≥ 3 item (FM-02: 4, FM-03: 4, FM-04: 4, FM-05: 5, FM-06: 3, FM-07: 5, FM-08: 5, FM-09: 4). `evalset --v2` → 0 problem.
 - **Slice** (nhãn slice lấy từ **nhãn**, không từ output của agent):
 
