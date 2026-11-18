@@ -64,5 +64,5 @@ Quy tắc: tiền và phê duyệt luôn chấm bằng code. Judge chỉ dùng c
 ## Phê duyệt
 | Vai trò | Tên | Ngày |
 |---|---|---|
-| Product | | |
+| Product | Đỗ Duy Bộ (bài cá nhân, kiêm vai Product) | 2026-11-17 |
 | Eval owner (giữ gate) | Đỗ Duy Bộ | 2026-11-17 |

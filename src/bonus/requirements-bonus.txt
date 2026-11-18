@@ -1,0 +1,2 @@
+# Bonus only (Inspect AI port). Install on top of requirements.txt + requirements-lab9.txt.
+inspect_ai==0.3.290
