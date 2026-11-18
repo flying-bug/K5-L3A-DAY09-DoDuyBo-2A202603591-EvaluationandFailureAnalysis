@@ -1,0 +1,210 @@
+{
+  "tool": "inspect_ai 0.3.290",
+  "spec": "config\\metric_spec.yaml",
+  "eval_set_version": "v1",
+  "seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "shapes": [
+    "swarm",
+    "fixed",
+    "seeded_regression"
+  ],
+  "all_rows_agree": true,
+  "mismatches": [],
+  "metrics": [
+    {
+      "shape": "swarm",
+      "metric": "pass_rate",
+      "lab9": 0.9857,
+      "inspect": 0.9857,
+      "rows": 70,
+      "rows_agree": 70,
+      "run_id": "E-swarm-20261118-1d94"
+    },
+    {
+      "shape": "swarm",
+      "metric": "secret_leak",
+      "lab9": 0,
+      "inspect": 0,
+      "rows": 70,
+      "rows_agree": 70,
+      "run_id": "E-swarm-20261118-1d94"
+    },
+    {
+      "shape": "swarm",
+      "metric": "approval_bypass",
+      "lab9": 0,
+      "inspect": 0,
+      "rows": 70,
+      "rows_agree": 70,
+      "run_id": "E-swarm-20261118-1d94"
+    },
+    {
+      "shape": "swarm",
+      "metric": "refund_amount_correct",
+      "lab9": 0.9857,
+      "inspect": 0.9857,
+      "rows": 70,
+      "rows_agree": 70,
+      "run_id": "E-swarm-20261118-1d94"
+    },
+    {
+      "shape": "swarm",
+      "metric": "db_fact_kept",
+      "lab9": 0.9857,
+      "inspect": 0.9857,
+      "rows": 70,
+      "rows_agree": 70,
+      "run_id": "E-swarm-20261118-1d94"
+    },
+    {
+      "shape": "swarm",
+      "metric": "reply_amount_matches_ledger",
+      "lab9": 1.0,
+      "inspect": 1.0,
+      "rows": 70,
+      "rows_agree": 70,
+      "run_id": "E-swarm-20261118-1d94"
+    },
+    {
+      "shape": "swarm",
+      "metric": "proposal_amount_correct",
+      "lab9": 0.9857,
+      "inspect": 0.9857,
+      "rows": 70,
+      "rows_agree": 70,
+      "run_id": "E-swarm-20261118-1d94"
+    },
+    {
+      "shape": "fixed",
+      "metric": "pass_rate",
+      "lab9": 1.0,
+      "inspect": 1.0,
+      "rows": 70,
+      "rows_agree": 70,
+      "run_id": "E-fixed-20261118-1d94"
+    },
+    {
+      "shape": "fixed",
+      "metric": "secret_leak",
+      "lab9": 0,
+      "inspect": 0,
+      "rows": 70,
+      "rows_agree": 70,
+      "run_id": "E-fixed-20261118-1d94"
+    },
+    {
+      "shape": "fixed",
+      "metric": "approval_bypass",
+      "lab9": 0,
+      "inspect": 0,
+      "rows": 70,
+      "rows_agree": 70,
+      "run_id": "E-fixed-20261118-1d94"
+    },
+    {
+      "shape": "fixed",
+      "metric": "refund_amount_correct",
+      "lab9": 1.0,
+      "inspect": 1.0,
+      "rows": 70,
+      "rows_agree": 70,
+      "run_id": "E-fixed-20261118-1d94"
+    },
+    {
+      "shape": "fixed",
+      "metric": "db_fact_kept",
+      "lab9": 1.0,
+      "inspect": 1.0,
+      "rows": 70,
+      "rows_agree": 70,
+      "run_id": "E-fixed-20261118-1d94"
+    },
+    {
+      "shape": "fixed",
+      "metric": "reply_amount_matches_ledger",
+      "lab9": 1.0,
+      "inspect": 1.0,
+      "rows": 70,
+      "rows_agree": 70,
+      "run_id": "E-fixed-20261118-1d94"
+    },
+    {
+      "shape": "fixed",
+      "metric": "proposal_amount_correct",
+      "lab9": 1.0,
+      "inspect": 1.0,
+      "rows": 70,
+      "rows_agree": 70,
+      "run_id": "E-fixed-20261118-1d94"
+    },
+    {
+      "shape": "seeded_regression",
+      "metric": "pass_rate",
+      "lab9": 0.7143,
+      "inspect": 0.7143,
+      "rows": 70,
+      "rows_agree": 70,
+      "run_id": "E-seeded_regression-20261118-1d94"
+    },
+    {
+      "shape": "seeded_regression",
+      "metric": "secret_leak",
+      "lab9": 0,
+      "inspect": 0,
+      "rows": 70,
+      "rows_agree": 70,
+      "run_id": "E-seeded_regression-20261118-1d94"
+    },
+    {
+      "shape": "seeded_regression",
+      "metric": "approval_bypass",
+      "lab9": 0,
+      "inspect": 0,
+      "rows": 70,
+      "rows_agree": 70,
+      "run_id": "E-seeded_regression-20261118-1d94"
+    },
+    {
+      "shape": "seeded_regression",
+      "metric": "refund_amount_correct",
+      "lab9": 0.8571,
+      "inspect": 0.8571,
+      "rows": 70,
+      "rows_agree": 70,
+      "run_id": "E-seeded_regression-20261118-1d94"
+    },
+    {
+      "shape": "seeded_regression",
+      "metric": "db_fact_kept",
+      "lab9": 0.9286,
+      "inspect": 0.9286,
+      "rows": 70,
+      "rows_agree": 70,
+      "run_id": "E-seeded_regression-20261118-1d94"
+    },
+    {
+      "shape": "seeded_regression",
+      "metric": "reply_amount_matches_ledger",
+      "lab9": 0.7857,
+      "inspect": 0.7857,
+      "rows": 70,
+      "rows_agree": 70,
+      "run_id": "E-seeded_regression-20261118-1d94"
+    },
+    {
+      "shape": "seeded_regression",
+      "metric": "proposal_amount_correct",
+      "lab9": 0.7857,
+      "inspect": 0.7857,
+      "rows": 70,
+      "rows_agree": 70,
+      "run_id": "E-seeded_regression-20261118-1d94"
+    }
+  ]
+}
